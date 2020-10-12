@@ -1,4 +1,5 @@
-
+@extends('layouts.app') {{--Sirve para aplicar la plantilla (visual) que trae Laravel, en vez de html puro--}}
+@section('content')
 {{--COMENTARIO LARAVEL--}}
 {{-- section la sección en donde se incluye el contenido del html--}}
 {{--Extiende de la vista que tiene el nombre layouts[carpeta] app [archivo]-}}
@@ -9,3 +10,4 @@
     <h1 class="text-center">Hola mi amor</h1>
     </div>
 </div>
+@endsection
