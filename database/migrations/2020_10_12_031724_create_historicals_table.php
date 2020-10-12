@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTiresTable extends Migration
+class CreateHistoricalsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateTiresTable extends Migration
      */
     public function up()
     {
-        Schema::create('tires', function (Blueprint $table) {
+        Schema::create('historicals', function (Blueprint $table) {
             $table->id();
             $table->string('economic_number');
             $table->string('brand');
@@ -39,7 +39,6 @@ class CreateTiresTable extends Migration
             $table->double('proyected_km')->nullable();
             $table->float('consumed_percentage');
             /**----------------------------------------------------------------------------------------------------------------- */
-            
             $table->text('tire_observations')->nullable();
             $table->timestamps();
 
@@ -56,6 +55,6 @@ class CreateTiresTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tires');
+        Schema::dropIfExists('historicals');
     }
 }

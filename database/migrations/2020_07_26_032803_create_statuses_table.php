@@ -17,7 +17,7 @@ class CreateStatusesTable extends Migration
             $table->id();
             $table->string('status_name');
             $table->text('observation')->nullable();
-            $table->timestamps();
+            $table->timestamps(); //with this attribute is not neccesary to add "StatusDate"
         });
     }
 
