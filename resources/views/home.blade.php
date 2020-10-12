@@ -15,6 +15,7 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    <a href="{{route('status_index')}}" class="btn btn-sm btn-outline-primary">Acceder</a>
                 </div>
             </div>
         </div>
