@@ -22,3 +22,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 //Status routes
 Route::get('/status/index', 'StatusController@index')->name('status_index');
+Route::get('/status/create', 'StatusController@create')->name('status_create');
+Route::post('/status/create', 'StatusController@store')->name('status_store');
+Route::get('/status/edit/{id}', 'StatusController@edit')->name('status_edit');
+Route::put('/status/update/{id}', 'StatusController@update')->name('status_update');
+Route::get('/status/show/{id}', 'StatusController@show')->name('status_show');
