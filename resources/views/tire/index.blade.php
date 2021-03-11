@@ -4,6 +4,9 @@
 <div class="container">
     <div class="row justify-content-center">
         <h1 class="text-center">Llanta</h1>
+        <div class="col-md-6">
+            <a href="{{route('tire_create')}}" class="btn btn-sm btn-primary">Registrar llanta</a>
+        </div>
 
         <table class="table">
             <thead>

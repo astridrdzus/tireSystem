@@ -28,3 +28,5 @@ Route::get('/status/edit/{id}', 'StatusController@edit')->name('status_edit');
 Route::put('/status/update/{id}', 'StatusController@update')->name('status_update');
 Route::get('/status/show/{id}', 'StatusController@show')->name('status_show');
 Route::get('tire/index', 'TireController@index')->name('tire_index');
+Route::get('tire/create', 'TireController@create')->name('tire_create');
+Route::get('tire/crate', 'TireController@store')->name('tire_store');

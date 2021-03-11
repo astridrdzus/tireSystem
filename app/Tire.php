@@ -10,7 +10,7 @@ class Tire extends Model
                             'brand', 
                             'design', 
                             'size', 
-                            'mountin_date', 
+                            'mounting_date', 
                             'tire_cost',
                             'tire_type', 
                             'otd', 
@@ -25,7 +25,6 @@ class Tire extends Model
                             'mm_km_cost', 
                             'proyected_km',
                             'consumed_percentage', 
-                            'tire_observations', 
                             'tire_observations', 
                             'status_id', 
                             'vehicle_id'];
